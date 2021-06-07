@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <View
+        android:layout_width="70dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/darker_gray"
+        />
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvNewItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ĐĂNG KÝ KHÓA HỌC"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn học ngành "/>
+            <Spinner
+                android:id="@+id/SpnNganhHoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd">
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="Chuyên ngành của bạn là  "/>
+            <Spinner
+                android:id="@+id/SpnChuyenNganh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+              android:textStyle="italic"
+                android:textSize="15dp"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Các môn học dành cho bạn : "/>
+            <Spinner
+                android:id="@+id/SpnMon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="2dp"
+            android:orientation="horizontal"
+            android:layout_width="367dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/colorAccent"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số tín chỉ                      : "/>
+            <TextView
+                android:gravity="center"
+                android:textColor="#0d0d0d"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:id="@+id/txtTinChi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập số tín chỉ"/>
+        </LinearLayout>
+    <Button
+        android:background="@color/colorAccent"
+        android:id="@+id/btnDangKy"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Đăng Ký"/>
+    </LinearLayout>
+</FrameLayout>

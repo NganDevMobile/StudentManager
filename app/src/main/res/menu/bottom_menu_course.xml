@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/botTimeTable"
+        android:title="SUBJECT-TIMETABLE"
+        android:icon="@drawable/timetable"/>
+    <item
+        android:id="@+id/botExam"
+        android:title="EXAM SCHEDULE"
+        android:icon="@drawable/exam"/>
+</menu>
